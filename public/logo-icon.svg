@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <defs>
+    <linearGradient id="iconOrange" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF6B00" />
+      <stop offset="50%" stop-color="#FF8A00" />
+      <stop offset="100%" stop-color="#FF3A00" />
+    </linearGradient>
+    <linearGradient id="iconDarkPlate" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#0B0F17" />
+    </linearGradient>
+    <linearGradient id="iconGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047" />
+      <stop offset="100%" stop-color="#F59E0B" />
+    </linearGradient>
+  </defs>
+
+  <!-- Hexagonal Outer Shield -->
+  <polygon points="50,3 96,27 96,73 50,97 4,73 4,27" fill="url(#iconDarkPlate)" stroke="url(#iconOrange)" stroke-width="4" stroke-linejoin="round" />
+  <polygon points="50,9 90,30 90,70 50,91 10,70 10,30" fill="#0B0F17" stroke="#334155" stroke-width="1.5" />
+
+  <!-- 919 Area Badge on top -->
+  <rect x="25" y="14" width="50" height="22" rx="5" fill="url(#iconOrange)" />
+  <text x="50" y="30" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="900" font-size="16" fill="#0B0F17" text-anchor="middle" letter-spacing="-0.5">919</text>
+
+  <!-- Diagnostic Spark & Wrench Symbol -->
+  <g transform="translate(25, 42)">
+    <!-- Crossed Wrench Silhouette -->
+    <path d="M8 38 L30 16 C33 13 38 13 41 16 C43 18 43 23 41 25 L37 29 L41 33 L37 37 L33 33 L15 51 C13 53 8 53 6 51 C4 49 4 44 6 42 Z" fill="#94A3B8" opacity="0.35" transform="scale(0.8) translate(-5, -12)" />
+    <!-- High-Voltage Diagnostic Bolt -->
+    <path d="M26 2 L14 26 L24 24 L18 44 L36 18 L26 20 Z" fill="url(#iconGold)" stroke="#0B0F17" stroke-width="1.5" />
+    <!-- Center Pulse Core -->
+    <circle cx="25" cy="22" r="3" fill="#FF5A1F" />
+  </g>
+</svg>
