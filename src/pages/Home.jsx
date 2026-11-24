@@ -55,22 +55,22 @@ export default function Home() {
               <a
                 href="#booking-intake"
                 onClick={scrollToBooking}
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-gradient-to-r from-orange-500 via-orange-600 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white font-extrabold text-base sm:text-lg px-8 py-4 rounded-xl shadow-glow-orange hover:shadow-glow-amber transition-all duration-200 transform hover:scale-[1.02] active:scale-[0.98]"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-gradient-to-r from-orange-500 via-orange-600 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white font-extrabold text-base sm:text-lg px-8 py-4 rounded-xl shadow-glow-orange hover:shadow-glow-amber transition-all duration-200 transform hover:scale-[1.02] active:scale-[0.98] whitespace-nowrap shrink-0"
               >
-                <Calendar className="w-5 h-5" />
-                <span>[ Book Diagnostic Inspection ]</span>
+                <Calendar className="w-5 h-5 shrink-0" />
+                <span className="whitespace-nowrap">[ Book Diagnostic Inspection ]</span>
               </a>
 
               {/* Secondary CTA Button: [ Emergency Roadside Help ] */}
               <Link
                 to="/emergency"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-[#162032] hover:bg-[#1E2B42] text-slate-100 font-bold text-base sm:text-lg px-8 py-4 rounded-xl border border-red-500/40 hover:border-red-500/80 transition-all duration-200 shadow-lg group"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-[#162032] hover:bg-[#1E2B42] text-slate-100 font-bold text-base sm:text-lg px-8 py-4 rounded-xl border border-red-500/40 hover:border-red-500/80 transition-all duration-200 shadow-lg group whitespace-nowrap shrink-0"
               >
-                <span className="relative flex h-3 w-3">
+                <span className="relative flex h-3 w-3 shrink-0">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
                 </span>
-                <span className="text-red-400 group-hover:text-red-300">[ Emergency Roadside Help ]</span>
+                <span className="text-red-400 group-hover:text-red-300 whitespace-nowrap">[ Emergency Roadside Help ]</span>
               </Link>
             </div>
 

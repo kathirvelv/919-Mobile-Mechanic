@@ -6,9 +6,16 @@ export default function Logo({ size = 'default', showTagline = true, className =
   const isLarge = size === 'lg';
 
   return (
-    <Link to="/" className={`inline-flex items-center gap-3 group transition-transform duration-200 hover:scale-[1.01] ${className}`}>
+    <Link
+      to="/"
+      className={`inline-flex items-center gap-2.5 sm:gap-3 group transition-transform duration-200 hover:scale-[1.01] shrink-0 whitespace-nowrap select-none ${className}`}
+    >
       {/* Precision Shield Icon */}
-      <div className={`relative flex items-center justify-center shrink-0 ${isSmall ? 'w-9 h-9' : isLarge ? 'w-14 h-14' : 'w-11 h-11'}`}>
+      <div
+        className={`relative flex items-center justify-center shrink-0 ${
+          isSmall ? 'w-8 h-8' : isLarge ? 'w-14 h-14' : 'w-10 h-10'
+        }`}
+      >
         <svg viewBox="0 0 100 100" className="w-full h-full drop-shadow-md">
           <defs>
             <linearGradient id="logoGradOrange" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -42,7 +49,16 @@ export default function Logo({ size = 'default', showTagline = true, className =
 
           {/* Mini 919 Pill inside badge */}
           <rect x="26" y="16" width="48" height="20" rx="4" fill="url(#logoGradOrange)" />
-          <text x="50" y="31" fontFamily="system-ui, sans-serif" fontWeight="900" fontSize="14" fill="#0B0F17" textAnchor="middle" letterSpacing="-0.5">
+          <text
+            x="50"
+            y="31"
+            fontFamily="system-ui, sans-serif"
+            fontWeight="900"
+            fontSize="14"
+            fill="#0B0F17"
+            textAnchor="middle"
+            letterSpacing="-0.5"
+          >
             919
           </text>
 
@@ -62,20 +78,32 @@ export default function Logo({ size = 'default', showTagline = true, className =
       </div>
 
       {/* Brand Text */}
-      <div className="flex flex-col leading-none">
-        <div className="flex items-center gap-1.5">
-          <span className={`font-black tracking-tight text-white ${isSmall ? 'text-lg' : isLarge ? 'text-2xl' : 'text-xl'}`}>
-            <span className="text-orange-500 font-extrabold">919</span> MOBILE
+      <div className="flex flex-col leading-tight whitespace-nowrap">
+        <div className="flex items-center gap-1.5 whitespace-nowrap">
+          <span
+            className={`font-black tracking-tight text-white whitespace-nowrap ${
+              isSmall ? 'text-base' : isLarge ? 'text-2xl' : 'text-lg sm:text-xl'
+            }`}
+          >
+            <span className="text-orange-500 font-black">919</span> MOBILE
           </span>
-          <span className={`font-black tracking-tight text-orange-400 ${isSmall ? 'text-lg' : isLarge ? 'text-2xl' : 'text-xl'}`}>
+          <span
+            className={`font-black tracking-tight text-orange-400 whitespace-nowrap ${
+              isSmall ? 'text-base' : isLarge ? 'text-2xl' : 'text-lg sm:text-xl'
+            }`}
+          >
             MECHANIC
           </span>
         </div>
-        
+
         {showTagline && (
-          <div className="flex items-center gap-1.5 mt-1">
-            <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-            <span className={`font-semibold tracking-wider uppercase text-slate-400 ${isSmall ? 'text-[9px]' : 'text-[10px]'}`}>
+          <div className="flex items-center gap-1.5 mt-0.5 whitespace-nowrap">
+            <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse shrink-0"></span>
+            <span
+              className={`font-semibold tracking-wider uppercase text-slate-400 whitespace-nowrap ${
+                isSmall ? 'text-[8.5px]' : 'text-[9.5px]'
+              }`}
+            >
               Cary &bull; Morrisville &bull; Triangle Area
             </span>
           </div>
